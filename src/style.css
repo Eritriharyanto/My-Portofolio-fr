@@ -1,1 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
 @import "tailwindcss";
+
+
+.irish-grover-regular {
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg-about {
+  background-image: linear-gradient(
+      rgba(88, 28, 135, 0.85),
+      rgba(88, 28, 135, 0.85)
+    ),
+    url("/src/img/Bgrafitti.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
