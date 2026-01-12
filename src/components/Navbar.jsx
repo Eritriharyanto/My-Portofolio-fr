@@ -45,8 +45,8 @@ export default function Navbar() {
           <Link to='/gallery' className='hover:text-blue-600'>
             Gallery
           </Link>
-          <Link to='/profile' className='hover:text-blue-600'>
-            Profile
+          <Link to='/project' className='hover:text-blue-600'>
+            Project
           </Link>
         </div>
       </div>
