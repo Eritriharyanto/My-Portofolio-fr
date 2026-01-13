@@ -12,7 +12,9 @@ export default function About() {
   "
     >
       {/* JUDUL */}
-      <h2 className='text-4xl font-bold text-orange-400 text-center mb-10'>
+      <h2 
+      style={{ fontFamily: "'Irish Grover', cursive" }}
+      className='text-7xl font-bold text-orange-400 text-center mb-10 -mt-20 text-stroke-black'>
         About Me
       </h2>
 

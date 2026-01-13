@@ -14,7 +14,9 @@ export default function Skills() {
 
   return (
     <section className='w-full py-20 px-10'>
-      <h2 className='text-4xl font-bold text-center text-orange-500 mb-12'>
+      <h2 
+      style={{ fontFamily: "'Irish Grover', cursive" }}
+      className='text-7xl font-bold text-center text-orange-500 mb-12 text-stroke-black'>
         Keahlian
       </h2>
 

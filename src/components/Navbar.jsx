@@ -2,14 +2,23 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [open, setOpen] = useState(false);
 
   const handleScroll = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const section = document.getElementById(id);
+        section?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      const section = document.getElementById(id);
+      section?.scrollIntoView({ behavior: "smooth" });
     }
     setOpen(false);
   };
@@ -48,6 +57,7 @@ export default function Navbar() {
         >
           <button
             onClick={() => handleScroll("hero")}
+            style={{ fontFamily: "'Irish Grover', cursive" }}
             className='hover:text-blue-600'
           >
             Home
@@ -55,13 +65,27 @@ export default function Navbar() {
 
           <button
             onClick={() => handleScroll("about")}
+            style={{ fontFamily: "'Irish Grover', cursive" }}
             className='hover:text-blue-600'
           >
             About
           </button>
 
-          <button className='hover:text-blue-600'>Gallery</button>
-          <button className='hover:text-blue-600'>Project</button>
+          <Link
+            to='/gallery'
+            style={{ fontFamily: "'Irish Grover', cursive" }}
+            className='hover:text-blue-600'
+          >
+            Gallery
+          </Link>
+
+          <Link
+            to='/project'
+            style={{ fontFamily: "'Irish Grover', cursive" }}
+            className='hover:text-blue-600'
+          >
+            Project
+          </Link>
         </div>
       </div>
     </nav>
