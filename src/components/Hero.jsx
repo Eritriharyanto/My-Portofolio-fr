@@ -10,10 +10,12 @@ export default function Hero() {
     >
       {/* KIRI */}
       <div className='w-1/2 max-w-[600px]'>
-        <h2 className='text-3xl font-bold text-orange-500'>
-          Hello, I'm <span className='text-black'>Masyarakat</span>
+        <h2
+          style={{ fontFamily: "'Irish Grover', cursive" }}
+          className='text-7xl font-bold text-orange-500 text-stroke-black'
+        >
+          Hello, I'm <span className='text-7xl text-black text-stroke-orange'>Masyarakat</span>
         </h2>
-
         {/* GRAFFITI NAME */}
         <div className='mt-6'>
           {/* ERI + TRI */}
@@ -21,7 +23,6 @@ export default function Hero() {
             <img src={eth} alt='eth' className='w-[300px] md:w-[800px]' />
           </div>
         </div>
-
         <button
           style={{ fontFamily: "'Irish Grover', cursive" }}
           className='mt-8 bg-red-500 mb-10 text-white px-8 py-3 rounded-lg hover:bg-red-600 '

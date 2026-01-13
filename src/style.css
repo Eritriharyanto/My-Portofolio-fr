@@ -8,6 +8,14 @@
   font-style: normal;
 }
 
+.text-stroke-black {
+  -webkit-text-stroke: 1px black;
+}
+.text-stroke-orange {
+  -webkit-text-stroke: 1px #a700f5;
+}
+
+
 .bg-about {
   background-image: linear-gradient(
       rgba(88, 28, 135, 0.85),
