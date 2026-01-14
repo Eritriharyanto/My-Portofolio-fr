@@ -64,7 +64,7 @@ export default function Navbar() {
           <button
             onClick={() => handleScroll("hero")}
             style={{ fontFamily: "'Irish Grover', cursive" }}
-            className=' text-orange-500 hover:text-red-700'
+            className=' text-red-700 hover:text-orange-500'
           >
             Home
           </button>
@@ -72,7 +72,7 @@ export default function Navbar() {
           <button
             onClick={() => handleScroll("about")}
             style={{ fontFamily: "'Irish Grover', cursive" }}
-            className='text-orange-500 hover:text-red-700'
+            className='text-red-700 hover:text-orange-500'
           >
             About
           </button>
@@ -80,7 +80,7 @@ export default function Navbar() {
           <Link
             to='/gallery'
             style={{ fontFamily: "'Irish Grover', cursive" }}
-            className='text-orange-500 hover:text-red-700'
+            className='text-red-700 hover:text-orange-500'
           >
             Gallery
           </Link>
@@ -88,7 +88,7 @@ export default function Navbar() {
           <Link
             to='/project'
             style={{ fontFamily: "'Irish Grover', cursive" }}
-            className='text-orange-500 hover:text-red-700'
+            className='text-red-700 hover:text-orange-500'
           >
             Project
           </Link>
