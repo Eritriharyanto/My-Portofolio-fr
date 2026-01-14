@@ -29,9 +29,15 @@ export default function Navbar() {
         {/* LOGO */}
         <button
           onClick={() => handleScroll("hero")}
-          className='text-xl font-bold text-blue-600 hover:text-blue-700'
+          style={{ fontFamily: "'Irish Grover', cursive" }}
+          className='text-xl font-bold text-yellow-500 hover:text-red-700'
         >
-          MyApp
+          <img
+            src='/src/img/logo.png'
+            alt='logo'
+            className='w-10 h-10 inline-block mr-2'
+          />
+          KingEri
         </button>
 
         {/* HAMBURGER */}
@@ -58,7 +64,7 @@ export default function Navbar() {
           <button
             onClick={() => handleScroll("hero")}
             style={{ fontFamily: "'Irish Grover', cursive" }}
-            className='hover:text-blue-600'
+            className=' text-orange-500 hover:text-red-700'
           >
             Home
           </button>
@@ -66,7 +72,7 @@ export default function Navbar() {
           <button
             onClick={() => handleScroll("about")}
             style={{ fontFamily: "'Irish Grover', cursive" }}
-            className='hover:text-blue-600'
+            className='text-orange-500 hover:text-red-700'
           >
             About
           </button>
@@ -74,7 +80,7 @@ export default function Navbar() {
           <Link
             to='/gallery'
             style={{ fontFamily: "'Irish Grover', cursive" }}
-            className='hover:text-blue-600'
+            className='text-orange-500 hover:text-red-700'
           >
             Gallery
           </Link>
@@ -82,7 +88,7 @@ export default function Navbar() {
           <Link
             to='/project'
             style={{ fontFamily: "'Irish Grover', cursive" }}
-            className='hover:text-blue-600'
+            className='text-orange-500 hover:text-red-700'
           >
             Project
           </Link>
