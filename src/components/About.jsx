@@ -37,7 +37,7 @@ export default function About() {
             className='
           h-40 sm:h-52 md:h-100 lg:h-82
     w-auto object-contain
-          w-auto object-contain
+          w-auto object-contain animate-[fadeUp_0.8s_ease-out]
         '
           />
         </div>

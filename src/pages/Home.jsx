@@ -1,18 +1,21 @@
-// src/pages/home.jsx
-
+// src/pages/Home.jsx
 import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Skills from "../components/Skills";
+import Skills from "./Skills";
 
 export default function Home() {
   return (
-    <div className='w-full overflow-x-hidden'>
+    <>
       <Navbar />
-      <Hero />
-      <About /> {/* 👈 ABOUT DULU */}
-      <Skills /> {/* 👈 BARU KEAHLIAN */}
-    </div>
+
+      {/* WRAPPER KONTEN */}
+      <main className="w-full overflow-x-hidden pt-24">
+        <Hero />
+        <About />
+        <Skills />
+      </main>
+    </>
   );
 }
