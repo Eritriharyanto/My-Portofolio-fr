@@ -16,6 +16,9 @@
 .text-stroke-white {
   -webkit-text-stroke: 1px #ff9900;
 }
+.text-stroke-red {
+  -webkit-text-stroke: 1px #ff0000;
+}
 
 @keyframes fadeUp {
   from {
