@@ -18,7 +18,10 @@ export default function Footer() {
             </Link>
             <ul className='flex flex-wrap items-center mb-6 text-sm font-medium text-body sm:mb-0'>
               <li>
-                <Link to='#' className='hover:underline me-4 md:me-6'>
+                <Link
+                  to='https://github.com/Eritriharyanto'
+                  className='hover:underline me-4 md:me-6'
+                >
                   GitHub
                 </Link>
               </li>
