@@ -26,7 +26,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to='#' className='hover:underline me-4 md:me-6'>
+                <Link to='https://id.linkedin.com/in/eri-tri-haryanto-0bba09316' className='hover:underline me-4 md:me-6'>
                   Linkind
                 </Link>
               </li>
