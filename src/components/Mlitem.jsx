@@ -42,6 +42,18 @@ export default function MLitem({ model }) {
         <p className='text-[11px] font-mono text-gray-600 italic'>
           Source: {model.dataset}
         </p>
+
+        {/* Repo Link */}
+        <div className='flex flex-col justify-end items-end'>
+          <a
+            href={model.repo} // Ganti 'item' menjadi 'model'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-sm font-mono text-gray-400 hover:text-white flex items-center gap-2 transition-colors'
+          >
+            [ access_ml_logs ]
+          </a>
+        </div>
       </div>
     </div>
   );
