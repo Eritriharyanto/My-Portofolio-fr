@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-      <footer className='bg-neutral-primary-soft rounded-base shadow-xs m-4'>
+      <footer className='bg-neutral-primary-soft rounded-base shadow-xs m-4 relative z-20'>
         <div className='w-full max-w-screen-xl mx-auto p-4 md:py-8'>
           <div className='sm:flex sm:items-center sm:justify-between'>
             <Link
@@ -26,7 +26,10 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to='https://id.linkedin.com/in/eri-tri-haryanto-0bba09316' className='hover:underline me-4 md:me-6'>
+                <Link
+                  to='https://id.linkedin.com/in/eri-tri-haryanto-0bba09316'
+                  className='hover:underline me-4 md:me-6'
+                >
                   Linkind
                 </Link>
               </li>
